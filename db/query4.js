@@ -11,7 +11,7 @@ async function query4() {
 
     await client.connect();
 
-    const db = client.db("TweetsForDB");
+    const db = client.db("AirbnbDB");
 
     const airbnb = db.collection("Airbnb");
 

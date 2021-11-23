@@ -15,7 +15,7 @@ async function getAirbnb() {
 
     console.log("Connected!");
 
-    const db = client.db("TweetsForDB");
+    const db = client.db("AirbnbDB");
 
     const airbnb = db.collection("Airbnb");
 
@@ -43,7 +43,7 @@ async function countAirbnb() {
 
     console.log("Connected!");
 
-    const db = client.db("TweetsForDB");
+    const db = client.db("AirbnbDB");
 
     const airbnb = db.collection("Airbnb");
 
@@ -74,7 +74,7 @@ async function getAirbnbByID(airbnbId) {
 
     console.log("Connected!");
 
-    const db = client.db("TweetsForDB");
+    const db = client.db("AirbnbDB");
 
     const airbnb = db.collection("Airbnb"); 
 
@@ -101,7 +101,7 @@ async function deleteAirbnb(airbnbId) {
 
     console.log("Connected!");
 
-    const db = client.db("TweetsForDB");
+    const db = client.db("AirbnbDB");
 
     const airbnb = db.collection("Airbnb");
 
@@ -130,7 +130,7 @@ async function updateAirbnb(id, newAirbnb) {
 
     console.log("Connected!");
 
-    const db = client.db("TweetsForDB");
+    const db = client.db("AirbnbDB");
 
     const airbnb = db.collection("Airbnb");
 
@@ -163,7 +163,7 @@ async function createAirbnb(newAirbnb) {
 
     console.log("Connected!");
 
-    const db = client.db("TweetsForDB");
+    const db = client.db("AirbnbDB");
 
     const airbnb = db.collection("Airbnb");
  
