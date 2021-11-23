@@ -3,9 +3,12 @@
 Please download the file and run: npm install in the command line to install node_modules directory. 
 
 The database file is "airbnb.json", you can import the file through compass. 
--First create a database named AirbnbDB, 
--then create a collection named Airbnb, 
--and import the airbnb.json to Airbnb collection
+
+1. First create a database named AirbnbDB, 
+
+2. then create a collection named Airbnb, 
+
+3. and import the airbnb.json to Airbnb collection
 
 To see the five queries, run: node db/query1.js   ... node db/query5.js
 
