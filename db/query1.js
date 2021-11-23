@@ -13,7 +13,7 @@ async function query1() {
 
     const db = client.db("TweetsForDB");
 
-    const airbnb = db.collection("Tweets");
+    const airbnb = db.collection("Airbnb");
 
 
     // Query1: At least one query must contain an aggregation:
@@ -21,19 +21,23 @@ async function query1() {
     const query = [
       {
         "$project": {
-          "host": 0
+          "host": 0, 
+          "room": 0, 
+          "neighborhood": 0
         }
       }, {
         "$sort": {
           "price_per_night": -1
         }
       }, {
-        "$limit": 15
+        "$limit": 5
       }
     ];
 
 
     const result = await airbnb.aggregate(query).toArray();  
+
+    // find the information of 5 most expensive rooms
 
     console.log("The result is: ", result);
 

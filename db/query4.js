@@ -35,6 +35,8 @@ async function query4() {
 
     const query ={"host.host_id": 10338};
 
+    // find a certain host and count how many times he shows up in the db
+
     const result = await airbnb.find(query).count(); 
 
     console.log("The result of query4 is: ", result);

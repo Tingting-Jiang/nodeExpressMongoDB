@@ -16,12 +16,16 @@ async function query5() {
 
     const airbnb = db.collection("Airbnb");
 
+  
 
     // and one must be updating a document based on a query parameter 
     // (e.g. flipping on or off a boolean attribute for a document, such as enabling/disabling a song)
-    const query = {"$inc": {"price_per_night": 10}};
+    const query = {$inc: {"price_per_night": 10}};
 
-    await airbnb.updateMany(query).toArray();
+    // increase the price by 10 if the host is a super Host
+
+    await airbnb.updateMany({"host.superHost": true}, query);
+   
    
 
 

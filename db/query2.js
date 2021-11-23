@@ -13,7 +13,7 @@ async function query2() {
 
     const db = client.db("TweetsForDB");
 
-    const airbnb = db.collection("Tweets");
+    const airbnb = db.collection("Airbnb");
 
 
 
@@ -38,6 +38,8 @@ async function query2() {
         "$limit": 20
       }
     ];
+
+    // find the which prices has exist more than other prices
   
 
     const result = await airbnb.aggregate(query).toArray();
