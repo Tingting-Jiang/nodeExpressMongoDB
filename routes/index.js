@@ -3,6 +3,7 @@ var router = express.Router();
 
 const myDB = require("../db/myMongoDB.js");
 
+
 /* GET home page. */
 router.get("/", async function(req, res) {
   const total = await myDB.countAirbnb();
